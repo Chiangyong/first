@@ -15,3 +15,29 @@ void up_and_down(int)
     printf("LEVEL %d: n location %p\n", n, &n);
  
 }
+**************
+#include <stdio.h>
+void Recursion(int depth){
+    printf("抱着");
+    if (!depth) {
+        printf("我的小鲤鱼");
+    }
+    else {
+        Recursion(--depth);
+    }
+    printf("的我");
+}
+int main(){
+    printf("吓得我抱起了\n");
+    Recursion(2);
+    putchar('\n');
+}
+
+作者：李冰
+链接：https://www.zhihu.com/question/20507130/answer/114197404
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+结果：
+吓得我抱起了
+抱着抱着抱着我的小鲤鱼的我的我的我
